@@ -5,7 +5,12 @@ import MainNavbar from "../../components/navbars/MainNavbar";
 
 const MainLayout = () => {
   return (
-    <Box>
+    <Box
+      sx={{
+        minHeight: "100vh",
+        bgcolor: "primary.main",
+      }}
+    >
       <MainNavbar />
       <Outlet />
     </Box>
