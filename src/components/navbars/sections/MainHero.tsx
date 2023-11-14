@@ -1,11 +1,10 @@
-import React from "react";
-
 import Box from "@mui/material/Box";
 
-// image
-import mainHero from "../../../assets/hero/hero-1.png";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+
+// image
+import mainHero from "../../../assets/hero/hero-2.png";
 
 const MainHero = () => {
   return (
@@ -54,17 +53,17 @@ const MainHero = () => {
         </Box>
       </Box>
       <Box
-        component="img"
-        src={mainHero}
-        alt="main hero"
         sx={{
           width: "100%",
           height: "100%",
-          objectFit: "cover",
           position: "absolute",
           inset: 0,
           filter: "brightness(0.4) blur(1px)",
           zIndex: -1,
+          backgroundImage: `url(${mainHero})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed",
         }}
       />
     </Box>
