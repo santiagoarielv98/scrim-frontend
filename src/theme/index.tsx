@@ -5,7 +5,7 @@ import { createTheme, ThemeProvider as MUIThemeProvider } from "@mui/material/st
 
 import { palette } from "./palette";
 // import { shadows } from "./shadows";
-// import { overrides } from "./overrides";
+import { overrides } from "./overrides";
 import { typography } from "./typography";
 // import { customShadows } from "./custom-shadows";
 
@@ -26,7 +26,7 @@ const ThemeProvider = ({ children }: ThemeProviderProps) => {
   );
 
   const theme = createTheme(memoizedValue);
-  // theme.components = overrides(theme);
+  theme.components = overrides(theme);
   return (
     <MUIThemeProvider theme={theme}>
       <CssBaseline />
