@@ -1,5 +1,7 @@
+import MainHero from "../../components/navbars/sections/MainHero";
+
 const App = () => {
-  return <div>Hello World</div>;
+  return <MainHero />;
 };
 
 export default App;
