@@ -11,9 +11,9 @@ const Tooltip = styled(MuiTooltip)(({ theme }) => ({
   },
 }));
 
-const ButtonIcon = styled(({ children, ...rest }: ButtonProps) => (
+const ButtonIcon = styled(({ children, title, ...rest }: ButtonProps) => (
   <Tooltip
-    title={children}
+    title={children || title}
     placement="bottom"
     arrow
     PopperProps={{
